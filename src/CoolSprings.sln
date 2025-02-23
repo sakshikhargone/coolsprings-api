@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.35706.149
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.API", "CoolSprings.API\CoolSprings.API.csproj", "{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoolSprings.API", "CoolSprings.API\CoolSprings.API.csproj", "{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Model", "CoolSprings.Model\CoolSprings.Model.csproj", "{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Repository", "CoolSprings.Repositories\CoolSprings.Repository.csproj", "{158752F7-6317-4B8B-AE5E-2909DA1DBE15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
