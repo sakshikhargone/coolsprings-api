@@ -2,5 +2,5 @@
 
 public interface ICustomerRepository
 {
-    Task<bool> AddCustomer(Customer customer);
+    Task AddCustomer(Customer customer);
 }

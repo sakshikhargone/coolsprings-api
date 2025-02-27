@@ -2,5 +2,5 @@
 
 public interface IBookingRepository
 {
-    Task<bool> AddBooking(Booking newBooking);
+    Task AddBooking(Booking newBooking);
 }

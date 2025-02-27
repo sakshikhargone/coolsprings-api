@@ -1,5 +1,6 @@
 ﻿
 namespace CoolSprings.API.Controllers;
+
 [Route("api/bookings")]
 public class BookingController : APIController
 {
@@ -24,9 +25,11 @@ public class BookingController : APIController
             var bId =  Guid.NewGuid();
             var cId = Guid.NewGuid();
             var dId = Guid.NewGuid();
+            
 
             newBooking.BookingId = bId;
             newBooking.CustomerId = cId;
+            newBooking.DiscountId = dId;
             var Customer = new Customer();
             {
                 Customer.CustomerId = cId;
@@ -34,14 +37,19 @@ public class BookingController : APIController
                 Customer.CustomerPhone = newBooking.CustomerPhone;
             }
 
-            await _customerRepository.AddCustomer(Customer);
+           // await _customerRepository.AddCustomer(Customer);
+            //await _discountRepository.AddDiscount(newBooking.DiscountCode, dId);
             
-            var booking = await _bookingRepository.AddBooking(newBooking);
-            return Ok(booking);
+            await _bookingRepository.AddBooking(newBooking);
+            var data = new { 
+            message = "successful booking" 
+            };
+
+            return Ok(new ApiResponse(HttpStatusCode.OK, true, data , ""));
         }
         catch (Exception ex)
         {
-            ExceptionHandler.Log(ex);
+            Console.WriteLine(ex.Message);
             throw;
         }
     }

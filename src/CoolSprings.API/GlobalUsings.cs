@@ -5,3 +5,5 @@ global using System.Threading.Tasks;
 global using CoolSprings.Model;
 global using CoolSprings.Repository.Contract;
 global using Microsoft.AspNetCore.Mvc;
+global using System.Net;
+global using CoolSprings.API.DTO;

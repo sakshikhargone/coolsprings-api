@@ -3,6 +3,6 @@ namespace CoolSprings.Repository.Contract;
 
  public interface IDiscountRepository
     {
-        Task<bool> AddDiscount(Discount discount);
+    Task AddDiscount(string discountCode, Guid Id);
     }
 

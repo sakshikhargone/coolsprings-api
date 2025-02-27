@@ -6,13 +6,13 @@ namespace CoolSprings.Repository;
 
     public abstract class BaseRepository
     {
-       protected IDbConnection Connect()
+       public  IDbConnection Connect()
         {
             try
             {
                 string connectstring = Environment.GetEnvironmentVariable("WebAppDb");
-                connectstring.Replace("$DATABASE_NAME$", "ShreeWaterPark");
-                IDbConnection connection = new SqlConnection(connectstring);
+                 var _connection = connectstring.Replace("$DATABASE_NAME$", "ShreeWaterPark");
+                IDbConnection connection = new SqlConnection(_connection);
                 return connection;
 
             }
