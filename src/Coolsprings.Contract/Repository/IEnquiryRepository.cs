@@ -1,4 +1,4 @@
-﻿namespace CoolSprings.Contract;
+﻿namespace CoolSprings.Contract.Repository;
 
 public interface IEnquiryRepository
 {
