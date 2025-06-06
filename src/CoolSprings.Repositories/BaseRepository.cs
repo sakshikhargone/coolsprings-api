@@ -2,6 +2,12 @@
 {
     public class BaseRepository
     {
+        protected int commandTimeoutSeconds =
+                                            #if DEBUG
+                                                5000;
+                                            #else
+                                                3000;
+                                            #endif
         public virtual IDbConnection Connect()
         {
             try

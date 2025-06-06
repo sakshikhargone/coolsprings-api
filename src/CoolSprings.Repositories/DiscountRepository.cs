@@ -38,10 +38,9 @@ public class DiscountRepository : BaseRepository, IDiscountRepository
                       WHERE Code = @discountCode
                       """;
             using var db = Connect();
-            var discount = await db.QueryFirstOrDefaultAsync<Discount>(sql, new
-            {
-                discountCode
-            });
+            var discount = await db.QueryFirstOrDefaultAsync<Discount>(
+                sql, new { discountCode }, commandTimeout: commandTimeoutSeconds
+            );
             return discount;
         }
         catch (Exception ex)
