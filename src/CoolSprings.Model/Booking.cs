@@ -6,7 +6,7 @@ public class Booking
     public string CustomerName { get; set; }
     public string CustomerPhone { get; set; }
     public Guid CustomerId { get; set; }
-    public string DiscountValue { get; set; }
+    public string DiscountCode { get; set; }
     public Guid? DiscountId { get; set; }
     public DateTime ValidFrom { get; set; }
     public DateTime ExpiryDate { get; set; }
