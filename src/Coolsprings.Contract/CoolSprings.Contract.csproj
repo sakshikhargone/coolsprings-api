@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoolSprings.DTO\CoolSprings.DTO.csproj" />
+    <ProjectReference Include="..\CoolSprings.Model\CoolSprings.Model.csproj" />
+  </ItemGroup>
+
+</Project>
