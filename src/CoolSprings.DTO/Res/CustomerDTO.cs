@@ -1,6 +1,6 @@
 ﻿namespace CoolSprings.DTO.Res;
 
-public  class CustomerDTO
+public class CustomerDTO
 {
     public Guid CustomerId { get; set; }
     public string CustomerName { get; set; }

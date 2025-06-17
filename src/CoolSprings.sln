@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.35706.149
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoolSprings.API", "CoolSprings.API\CoolSprings.API.csproj", "{7C5F32E1-7CA6-4EFA-AD7A-07EC2ACB789C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Model", "CoolSprings.Model\CoolSprings.Model.csproj", "{C132ED1D-F424-4FFD-AF4F-42F3334ED8BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Repository", "CoolSprings.Repositories\CoolSprings.Repository.csproj", "{158752F7-6317-4B8B-AE5E-2909DA1DBE15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Contract", "Coolsprings.Contract\CoolSprings.Contract.csproj", "{628EE606-220D-49FB-B7FA-F0E657DA94F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.DTO", "CoolSprings.DTO\CoolSprings.DTO.csproj", "{15E511DF-42BD-4E7B-95A1-5F5BAF598749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Validator", "CoolSprings.Validator\CoolSprings.Validator.csproj", "{9862D918-E442-4925-9E6A-3424A078F25A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolSprings.Repositories.UnitTests", "CoolSprings.Repositories.UnitTests\CoolSprings.Repositories.UnitTests.csproj", "{EA8B619B-1B14-43CA-959E-6118390151B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158752F7-6317-4B8B-AE5E-2909DA1DBE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628EE606-220D-49FB-B7FA-F0E657DA94F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628EE606-220D-49FB-B7FA-F0E657DA94F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628EE606-220D-49FB-B7FA-F0E657DA94F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628EE606-220D-49FB-B7FA-F0E657DA94F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E511DF-42BD-4E7B-95A1-5F5BAF598749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E511DF-42BD-4E7B-95A1-5F5BAF598749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E511DF-42BD-4E7B-95A1-5F5BAF598749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E511DF-42BD-4E7B-95A1-5F5BAF598749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9862D918-E442-4925-9E6A-3424A078F25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9862D918-E442-4925-9E6A-3424A078F25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9862D918-E442-4925-9E6A-3424A078F25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9862D918-E442-4925-9E6A-3424A078F25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8B619B-1B14-43CA-959E-6118390151B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8B619B-1B14-43CA-959E-6118390151B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8B619B-1B14-43CA-959E-6118390151B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8B619B-1B14-43CA-959E-6118390151B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
