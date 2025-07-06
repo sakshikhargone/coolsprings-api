@@ -1,2 +1,2 @@
 # coolsprings-api
-A world of waves and water fun APIs build using .net 5
+A world of waves and water fun APIs build using .Net 5
