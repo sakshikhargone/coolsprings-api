@@ -1,7 +1,3 @@
-# coolsprings-api
-
-A world of waves and water fun APIs build using dotnet 5
-
 # CoolSprings API
 
 Welcome to the CoolSprings Water Park backend API! This API powers the core functionalities of the CoolSprings water park booking system in Khargone, handling bookings, ticket generation, customer data, and QR code management.
