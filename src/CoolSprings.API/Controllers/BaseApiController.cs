@@ -3,7 +3,7 @@
 [ApiController]
 public abstract class BaseApiController : ControllerBase
 {
-    public IActionResult ComposeResponse(ApiResponse response)
+    protected IActionResult ComposeResponse(ApiResponse response)
     {
         return Ok(response);
     }

@@ -4,5 +4,5 @@ public interface ITicketRepository
 {
     Task AddTicket(Ticket newTicket);
 
-    Task<TicketDetail> GetTicket(Guid bookingId);
+    Task<DTO.Res.BookingDetailDTO> GetTicket(Guid bookingId);
 }

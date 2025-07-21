@@ -1,4 +1,4 @@
-using Coolsprings.Contract;
+using CoolSprings.Contract;
 using CoolSprings.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

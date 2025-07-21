@@ -28,7 +28,7 @@ public class TicketRepository : BaseRepository, ITicketRepository
         }
     }
 
-    public async Task<TicketDetail> GetTicket(Guid bookingId)
+    public async Task<DTO.Res.BookingDetailDTO> GetTicket(Guid bookingId)
     {
         try
         {
@@ -41,7 +41,7 @@ public class TicketRepository : BaseRepository, ITicketRepository
                               WHERE BookingId = @bookingId
                               """;
             using var db = Connect();
-            var ticketDetail = await db.QueryFirstOrDefaultAsync<TicketDetail>(bookingDate,
+            var ticketDetail = await db.QueryFirstOrDefaultAsync<DTO.Res.BookingDetailDTO>(bookingDate,
                 new { bookingId }, commandTimeout: commandTimeoutSeconds);
             if (ticketDetail != null)
             {

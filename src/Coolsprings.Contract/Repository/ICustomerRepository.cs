@@ -6,7 +6,7 @@ public interface ICustomerRepository
 
     Task<Customer> GetCustomer(string CustomerPhone);
 
-    Task UpdateCustomer(TokenCredential credential);
+    Task UpdateCustomer(TokenCredentialDTO credential);
 
     Task<CustomerHistoryDTO> GetCustomerHistory(Guid customerId);
 

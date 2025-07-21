@@ -45,7 +45,7 @@ public class CustomerRepository : BaseRepository, ICustomerRepository
         }
     }
 
-    public async Task UpdateCustomer(TokenCredential credential)
+    public async Task UpdateCustomer(TokenCredentialDTO credential)
     {
         try
         {

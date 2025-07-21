@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿
 
 namespace CoolSprings.API.Services
 {
     public interface IEncoding
     {
-         string Encoding(TokenCredential crendial);
+         string Encoding(TokenCredentialDTO crendial);
     }
     
     public class EncodingService : IEncoding
     {
         
-        public  string Encoding([FromBody]TokenCredential credential)
+        public  string Encoding([FromBody]TokenCredentialDTO credential)
         {
             var token = JsonConvert.SerializeObject(credential);
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(token);

@@ -17,5 +17,13 @@ global using Newtonsoft.Json;
 global using Twilio;
 global using Twilio.Rest.Api.V2010.Account;
 global using Twilio.Types;
+global using Mapster;
+global using CoolSprings.DTO.Res;
+global using CoolSprings.Contract.Repository;
+global using CoolSprings.DTO.Req;
+global using MyFirstAPI.Services;
+
+
+
 
 

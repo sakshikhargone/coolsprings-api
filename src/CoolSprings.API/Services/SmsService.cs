@@ -1,7 +1,6 @@
-﻿using System;
-using Twilio;
-using Twilio.Rest.Api.V2010.Account;
-using Twilio.Types;
+﻿
+
+using Microsoft.Identity.Client;
 
 namespace MyFirstAPI.Services
 {
@@ -17,21 +16,21 @@ namespace MyFirstAPI.Services
             try
             {
                 var twilio = Environment.GetEnvironmentVariable("TwilioCreds");
+                Console.WriteLine(twilio);
                 var twilioCreds = twilio.Split(';');
                 var accountSid = twilioCreds[0];
                 var authToken = twilioCreds[1];
                 TwilioClient.Init(accountSid, authToken);
-                var messageOptions = new CreateMessageOptions(
-                  new PhoneNumber($"+91{sms.ToPhoneNumber}")
-
-                  );
+                var messageOptions = new CreateMessageOptions(new PhoneNumber($"+91{sms.ToPhoneNumber}"));
                 messageOptions.Body = sms.Content;
                 messageOptions.From = twilioCreds[2];
                 MessageResource.Create(messageOptions);
                 return true;
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return false;
             }
         }

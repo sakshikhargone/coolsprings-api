@@ -1,15 +1,14 @@
 ﻿
 
-namespace CoolSprings.API.Controllers
+namespace CoolSprings.API.Controllers;
+
+[Route("/")]
+[ApiController]
+public class WelcomeController : BaseApiController
 {
-    [Route("")]
-    [ApiController]
-    public class WelcomeController : BaseApiController
+    [HttpGet]
+    public IActionResult Get()
     {
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return Ok(new { Message = "Welcome to CoolSprings API" });
-        }
+        return Ok(new { Message = "Welcome to CoolSprings API" });
     }
 }
