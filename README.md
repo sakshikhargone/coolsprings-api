@@ -54,9 +54,10 @@ dotnet restore
  dotnet run
 ```
 
+# App Screenshot
+
+![API Documentation](Swagger.png)
+
 # Support
 
 For any technical query, please write to sakshi.khargone@gmail.com
-
-Footer
-© 20
