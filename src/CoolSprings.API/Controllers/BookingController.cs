@@ -30,7 +30,7 @@ public class BookingController : ControllerBase
 
         if (string.IsNullOrEmpty(newBooking.CustomerPhone))
         {
-            return BadRequest(new ApiResponse(HttpStatusCode.BadRequest, false, message:"customer phone no is required "));
+            return BadRequest(new ApiResponse(HttpStatusCode.BadRequest, false, message: "customer phone no is required "));
         }
         if (newBooking.CustomerPhone != null)
         {
@@ -68,7 +68,7 @@ public class BookingController : ControllerBase
                 discountId = discount.DiscountId;
             }
         }
-       var bookingId = Guid.NewGuid();
+        var bookingId = Guid.NewGuid();
         var booking = newBooking.Adapt<Booking>();
         booking.DiscountId = discountId;
         booking.CustomerId = customerId;
@@ -82,7 +82,14 @@ public class BookingController : ControllerBase
             ticket.IsValid = true;
             await _ticketContract.AddTicket(ticket);
         }
-        
+
+        var s = new Sms();
+        s.Content = s.Content = $"Hey, thank you for booking with us. Download your ticket: https://50f3-103-171-189-185.ngrok-free.app/{bookingId}";
+
+        s.ToPhoneNumber = booking.CustomerPhone;
+
+        var smsDetails = s.Adapt<Sms>();
+        var result = _smsService.Send(smsDetails);
 
         return Ok(new ApiResponse(HttpStatusCode.Created, true, new {bookingId = booking.BookingId}));
     }
