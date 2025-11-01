@@ -18,7 +18,7 @@ Welcome to the CoolSprings Water Park backend API! This API powers the core func
 
 **Database :** Microsoft SQL Server
 
-**ORM :** Entity Framework Core
+**ORM :** Dapper
 
 **API Docs :** Swagger/OpenAPI
 
